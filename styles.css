@@ -1,0 +1,18 @@
+body{
+	background-color: green;
+}
+
+#header{
+	font-size: 24pt;
+	font-family:'Special Elite', cursive;
+	color: white;
+	text-align: center;
+
+}
+
+#h1{
+	font-family:'Special Elite', cursive;
+	font-size: 14pt;
+	color: white;
+	text-align: center;
+}
