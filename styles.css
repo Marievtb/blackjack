@@ -1,11 +1,26 @@
-body{
-	background-color: green;
+/*body{
+	background-image: url(http://www.imageurlhost.com/images/99769122318152172363.jpg);
+	background-size: fill;
+}*/
+
+#backgroundImage{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index:-1;
+}
+
+.stretch {
+	width: 75%;
+	height: 100%;
 }
 
 #header{
 	font-size: 24pt;
 	font-family:'Special Elite', cursive;
-	color: white;
+	color: black;
 	text-align: center;
 
 }
@@ -13,6 +28,7 @@ body{
 #h1{
 	font-family:'Special Elite', cursive;
 	font-size: 14pt;
-	color: white;
+	color: black;
 	text-align: center;
 }
+

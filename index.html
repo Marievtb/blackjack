@@ -7,24 +7,36 @@
 
 
 <body>
-	<header id = "header"> Diner BlackJack </header>
-	<h1 id = "h1">You and a friend play until best of 5. Loser buys.</h1>
 
-<div id = "game-container">
-	<div id = "deck"> </div>
+	<header id = 'header'> Diner BlackJack </header>
+
+	<h1 id = 'h1'>You and a friend play until best of 5. Loser buys.</h1>
+
+<div id = 'game-container'>
+	<div id = 'deck'> </div>
+
 	<div>
-	<div id = "player1hand"> </div>
-	<div>
-	<div id = "player2hand"> </div>
-	<div> 
-	<div id = "scoreboard"> </div>
-	<div>
-	<div id = "buttons">
-		<button id = "deal"> DEAL </button>
-		<button id = "hit"> HIT </button>
-		<button id = "stand">STAND</button>
-		<button id = "surrender">SURRENDER</button>
+
+	<div class = 'player', id = 'player1'>
+		<button class = 'button', id = 'player1Hit'> Hit</button>
+		<button class = 'button', id = 'player1Stand'>Stand</button>
 	</div>
+
+	<div> 
+
+		<div class = 'player', id = 'player2'>
+			<button class = 'button', id = 'player2Hit'> Hit</button>
+			<button class = 'button', id = 'player2Stand'>Stand</button>
+		</div>
+
+	<div>
+ 
+	<div id = 'scoreboard'> </div>
+<div>
+	<div class = 'button', id = 'buttonContainer'>
+		<button id = 'dealButton'>Deal </button> 
+	</div>
+
 
 </div>
 
