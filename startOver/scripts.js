@@ -15,8 +15,9 @@
 // 	}
 // }
 // }
-
-
+// ====================================
+// The Deck
+// ------------------------------------------
 var card = function(suit, value, face){
 this.suit = suit;
 this.value = value; 
@@ -92,6 +93,15 @@ var kingC = new card('Clubs', 10, 'K');
 var deck = [aceD, aceH, aceS, aceC, twoD, twoH, twoS, twoC, threeD, threeH, threeS, threeC, fourD, fourH, fourS, fourC, fiveD, fiveH, fiveS, fiveC, sixD, sixH, sixS, sixC, sevenD, sevenH, sevenS, sevenC, eightD, eightH, eightS, eightC, nineD, nineH, nineS, nineC, tenD, tenH, tenS, tenC, jackD, jackH, jackS, jackC, queenD, queenH, queenS, queenC, kingD, kingH, kingS, kingC];
 // console.log(sixC);
 
+// shuffle the deck to return a randomCard
+function shuffle(deck){
+	for(var j, x, i = deck.length; i; j = Math.floor(Math.random() * i), x = deck[--i], deck[i] = deck[j], deck[j] = x);
+    return deck;
+}
+}
+// =====================
+// Functions
+//======================
 
 // function randomCards(){
 // 	math.random to pull indexes (*2)
