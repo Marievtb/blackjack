@@ -3,7 +3,7 @@
 	background-size: fill;
 }*/
 
-#backgroundImage{
+/*#backgroundImage{
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -15,7 +15,7 @@
 .stretch {
 	width: 75%;
 	height: 100%;
-}
+}*/
 
 #header{
 	font-size: 24pt;
@@ -31,4 +31,19 @@
 	color: black;
 	text-align: center;
 }
+/*
+#player1card1{
+	height:80px;
+	width:50px;
+	border:solid black;
+	display: inline;
+}
 
+#player1card2{
+	height:80px;
+	width:50px;
+	border: solid black;
+	display: inline;
+}
+
+*/

@@ -38,47 +38,130 @@
 // Functions
 // =============
 // 
+// need an array of cards 
+// need to randomly pull cards from array
+// need random cards to go to each player
+var player1;
+var player2;
 
-window.onload = function() {
-	for(var i=0; i < myDeck.length; i++){
-		div = document.createElement('div');
-		div.className = 'card';
+// Making hand for player1
+var player1hand= document.getElementById('player1');
+// console.log("player1hand");
 
-		if(myDeck[i].suit == 'Diamonds'){
-			var ascii_char = '♦';
-		} else {
-			var ascii_char = '&' + myDeck[i].suit.toLowerCase() + ';';
-		}
-
-		div.innerHTML = '' + myDeck[i].name + '' + ascii_char + '';
-		document.body.appendChild(div);
-	}
-
-}
-
-function card(value, name, suit){
-	this.value = value;
-	this.name = name;
-	this.suit = suit;
-}
-
-var deck = function() {
-	this.names = ['1','2','3','4','5','6','7','8','9','10','J','Q','K'];
-	this.suits = ['Hearts', 'Diamonds', 'Spades','Clubs'];
-	var cards =[];
-
-	for(var s = 0; s < this.suits.length; s++){
-		for(var n = 0; n < this.names.length; n++){
-			cards.push(new card(n+1, this.names[n], this.suits[s]));
-		}
-	}
-
-	return cards;
-	var myDeck = new deck();
-	console.log(myDeck);
-}
+// Making hand for player2
+var player2hand= document.getElementById('player2');
+console.log('player2hand');
 
 
+// ===============================================================
+// function card(value, name, suit){
+// 	this.value = value;
+// 	this.name = name;
+// 	this.suit = suit;
+// }
+// function deck(){
+// 	this.names = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+// 	this.suits = ['Hearts','Diamonds','Spades','Clubs'];
+// 	var cards = [];
+    
+//     for( var s = 0; s < this.suits.length; s++ ) {
+//         for( var n = 0; n < this.names.length; n++ ) {
+//             cards.push( new card( n+1, this.names[n], this.suits[s] ) );
+//         }
+//     }
+
+//     return cards;
+// }
+// var myDeck = new deck();
+// console.log(myDeck);
+
+// window.onload = function() {
+
+// 	for(var i=0; i < myDeck.length; i++){
+// 		div = document.createElement('div');
+// 		div.className = 'card';
+
+// 		if(myDeck[i].suit == 'Diamonds'){
+// 			var ascii_char = '♦';
+// 		} else {
+// 			var ascii_char = '&' + myDeck[i].suit.toLowerCase() + ';';
+// 		}
+
+// 		div.innerHTML = '' + myDeck[i].name + '' + ascii_char + '';
+// 		document.body.appendChild(div);
+// 	}
+
+// }
+// function card(value, name, suit){
+//     this.value = value;
+//     this.name = name;
+//     this.suit = suit;
+// }
+
+// function deck(){
+//     this.names = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+//     this.suits = ['Hearts','Diamonds','Spades','Clubs'];
+//     var cards = [];
+    
+//     for( var s = 0; s < this.suits.length; s++ ) {
+//         for( var n = 0; n < this.names.length; n++ ) {
+//             cards.push( new card( n+1, this.names[n], this.suits[s] ) );
+//         }
+//     }
+
+//     return cards;
+// }
+
+// var myDeck = new deck();
+
+// window.onload = function() {
+
+//     for(var i=0; i < myDeck.length; i++){
+//         div = document.createElement('div');
+//         div.className = 'card';
+
+//         if(myDeck[i].suit == 'Diamonds'){
+//             var ascii_char = '&diams;';
+//         } else {
+//             var ascii_char = '&' + myDeck[i].suit.toLowerCase() + ';';
+//         }
+
+//         div.innerHTML = '<span class="number">' + myDeck[i].name + '</span><span class="suit">' + ascii_char + '</span>';
+//         document.body.appendChild(div);
+//     }
+
+
+// function shuffle(o) {
+// 	for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+// 	return o;
+// };
+
+// myDeck = shuffle(myDeck);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // function card(value, name, suit) {
+// 	this.value = value;
+// 	this.name = name;
+// 	this.suit= suit;
+// }
+
+// function deck(){
+// 	this.names=['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+// 	this.suits = ['Hearts', 'Clubs','Diamonds', 'Spades'];
+// 	this.cardValue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10];
 
 
 
