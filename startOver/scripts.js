@@ -1,21 +1,20 @@
 // // console.log("ksahfkadjhsdf");
 
-// An array of cards
-// values
-// faces
-// suits
-var cards=['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
-var values= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10];
-var suits= ['Hearts', 'Diamonds','Spades', 'Clubs'];
-var newCard= [];
-for(var c = 0; c< cards.length; c++){
-	for (var v = 0; v <values[c].length; v++){
-		for (var s = 0; s < suits[v].length; s++){
-			newCard.push(cards[c][v][s]);
+
+var cardFace= ['A','1','2','3','4','5','6','7','8','9','10','J','Q','K'];
+var cardValue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10];
+var cardSuit= ['Hearts', 'Clubs', 'Diamonds','Spades'];
+var cards = [];
+var wholeDeck = function(){
+for( var i = 0; i< cardFace.length; i++){
+	for(var v= 0; v<cardValue[i].length; v++){
+		cards.push()
+		for(var s = 0; s < cardSuit[v].length; s++){
+			console.log(wholeDeck);
 		}
 	}
 }
-console.log(newCard);
+}
 // function randomCards(){
 // 	math.random to pull indexes (*2)
 // 	dealbutton.onclick 
@@ -43,9 +42,29 @@ console.log(newCard);
 
 
 
+// ===========================
+// Trial and Error//
+// ==========================
 
-
-
+// An array of cards
+// values
+// faces
+// suits
+// var faces=['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+// var values= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10];
+// var suits= ['Hearts', 'Diamonds','Spades', 'Clubs'];
+// var cards = function(){
+// for(var f = 0; f < faces.length; f++){
+// 	for (var v = 0; v < values[f].length; v++){
+// 		console.log(cards[v][f]);
+// 	} cards();
+// // 		for (var s = 0; s < suits[v].length; s++){
+// // 			newCard.push(cards[c][v][s]);
+// // 		}
+// 	}
+// }
+// }
+// console.log(newCard);
 
 
 
