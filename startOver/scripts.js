@@ -1,20 +1,20 @@
 // // console.log("ksahfkadjhsdf");
 
 
-var cardFace= ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
-var cardValue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10];
-var cardSuit= ['Hearts', 'Clubs', 'Diamonds','Spades'];
-var cards = [];
-var wholeDeck = function(){
-for( var i = 0; i< cardFace.length; i++){
-	for(var v= 0; v<cardSuit.length; v++){
-		cards.push(cardFace[i]+ ' '+ cardSuit[v])
-		// for(var s = 0; s < cardSuit[v].length; s++){
-		// // 	console.log(wholeDeck);
-		// }
-	}
-}
-}
+// var cardFace= ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+// var cardValue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10];
+// var cardSuit= ['Hearts', 'Clubs', 'Diamonds','Spades'];
+// var cards = [];
+// var wholeDeck = function(){
+// for( var i = 0; i< cardFace.length; i++){
+// 	for(var v= 0; v<cardSuit.length; v++){
+// 		cards.push(cardFace[i]+ ' '+ cardSuit[v])
+// 		// for(var s = 0; s < cardSuit[v].length; s++){
+// 		// // 	console.log(wholeDeck);
+// 		// }
+// 	}
+// }
+// }
 
 
 var card = function(suit, value, face){
@@ -24,10 +24,10 @@ this.face = face;
 
 }
 
-var aceD = new card('diamonds', 1, 'Ace');
+var aceD = new card('Diamonds', 1, 'Ace');
 var aceH = new card('Hearts', 1, 'Ace');
 var aceS = new card('Spades', 1, 'Ace');
-var aceC = new card('Clubs',1, 'Ace');
+var aceC = new card('Clubs', 1, 'Ace');
 
 var twoD = new card('Diamonds', 2, '2');
 var twoH = new card('Hearts', 2, '2');
@@ -35,7 +35,7 @@ var twoS = new card('Spades', 2, '2');
 var twoC = new card('Clubs', 2, '2');
 
 var threeD = new card('Diamonds', 3, '3');
-var threeH = new card ('Hearts', 3, '3');
+var threeH = new card('Hearts', 3, '3');
 var threeS = new card('Spades', 3, '3');
 var threeC = new card('Clubs', 3, '3');
 
@@ -89,19 +89,8 @@ var kingH = new card('Hearts', 10, 'K');
 var kingS = new card('Spades', 10, 'K'); 
 var kingC = new card('Clubs', 10, 'K');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+var deck = [aceD, aceH, aceS, aceC, twoD, twoH, twoS, twoC, threeD, threeH, threeS, threeC, fourD, fourH, fourS, fourC, fiveD, fiveH, fiveS, fiveC, sixD, sixH, sixS, sixC, sevenD, sevenH, sevenS, sevenC, eightD, eightH, eightS, eightC, nineD, nineH, nineS, nineC, tenD, tenH, tenS, tenC, jackD, jackH, jackS, jackC, queenD, queenH, queenS, queenC, kingD, kingH, kingS, kingC];
+// console.log(sixC);
 
 
 // function randomCards(){
@@ -154,14 +143,7 @@ var kingC = new card('Clubs', 10, 'K');
 // }
 // }
 // console.log(newCard);
-
-
-
-
-
-// ============
-// Trial and Error
-// ============
+// --------------------------------------------------
 // function cards(){
 // 	var face = ['A','2', '3', '4', '5', '6', '7', '8', '9', '10','J', 'Q', 'K'];
 // 	var suit = ['Hearts', 'Diamonds', 'Spades', 'Clubs'];
@@ -175,3 +157,18 @@ var kingC = new card('Clubs', 10, 'K');
 // 	} 
 // }
 // cards()
+// ----------------------------------------------------
+// // var cardFace= ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+// var cardValue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10];
+// var cardSuit= ['Hearts', 'Clubs', 'Diamonds','Spades'];
+// var cards = [];
+// var wholeDeck = function(){
+// for( var i = 0; i< cardFace.length; i++){
+// 	for(var v= 0; v<cardSuit.length; v++){
+// 		cards.push(cardFace[i]+ ' '+ cardSuit[v])
+// 		// for(var s = 0; s < cardSuit[v].length; s++){
+// 		// // 	console.log(wholeDeck);
+// 		// }
+// 	}
+// }
+// }
