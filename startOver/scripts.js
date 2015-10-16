@@ -4,7 +4,18 @@
 // values
 // faces
 // suits
-
+var cards=['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+var values= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10];
+var suits= ['Hearts', 'Diamonds','Spades', 'Clubs'];
+var newCard= [];
+for(var c = 0; c< cards.length; c++){
+	for (var v = 0; v <values[c].length; v++){
+		for (var s = 0; s < suits[v].length; s++){
+			newCard.push(cards[c][v][s]);
+		}
+	}
+}
+console.log(newCard);
 // function randomCards(){
 // 	math.random to pull indexes (*2)
 // 	dealbutton.onclick 
