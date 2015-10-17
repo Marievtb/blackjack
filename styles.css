@@ -17,6 +17,9 @@
 	height: 100%;
 }*/
 
+body{
+	background: url(http://imgur.com/4hg8TVs);
+}
 #header{
 	font-size: 24pt;
 	font-family:'Special Elite', cursive;

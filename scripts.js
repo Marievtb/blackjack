@@ -39,18 +39,30 @@
 // =============
 // 
 // need an array of cards 
-// need to randomly pull cards from array
-// need random cards to go to each player
-var player1;
-var player2;
+// // need to randomly pull cards from array
+// // need random cards to go to each player
+// var player1;
+// var player2;
 
-// Making hand for player1
-var player1hand= document.getElementById('player1');
-// console.log("player1hand");
+// // Making hand for player1
+// var player1hand= document.getElementById('player1');
+// // console.log("player1hand");
 
-// Making hand for player2
-var player2hand= document.getElementById('player2');
-console.log('player2hand');
+// // Making hand for player2
+// var player2hand= document.getElementById('player2');
+// console.log('player2hand');
+
+// function card(){
+// 	var face = ['A','2', '3', '4', '5', '6', '7', '8', '9', '10','J', 'Q', 'K'];
+// 	var suit = ['Hearts', 'Diamonds', 'Spades', 'Clubs'];
+// 	var value = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10,10, 10];
+// 	for(var f = 0; f < face.length; f++){
+// 		for(var s = 0; s < suits.length; s++){
+// 			for(var v = 0; v < value.length; v++){
+// 			} 
+// 		}
+// 	}
+// }
 
 
 // ===============================================================
