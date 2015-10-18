@@ -78,25 +78,30 @@ var kingC = new card('Clubs', 10, 'K');
 var deck = [aceD, aceH, aceS, aceC, twoD, twoH, twoS, twoC, threeD, threeH, threeS, threeC, fourD, fourH, fourS, fourC, fiveD, fiveH, fiveS, fiveC, sixD, sixH, sixS, sixC, sevenD, sevenH, sevenS, sevenC, eightD, eightH, eightS, eightC, nineD, nineH, nineS, nineC, tenD, tenH, tenS, tenC, jackD, jackH, jackS, jackC, queenD, queenH, queenS, queenC, kingD, kingH, kingS, kingC];
 // console.log(sixC);
 // ============================================================
-// shuffle the deck to return a randomCard
+// shuffle the deck
+
 function shuffle(deck){
 	for(var j, x, i = deck.length; i; j = Math.floor(Math.random() * i), x = deck[--i], deck[i] = deck[j], deck[j] = x);
-    return deck;
-}
-// console.log(deck)
+		 return deck;
+} shuffle(deck);
+
+var tempCard = deck.pop();
+console.log(tempCard); 
+
+
+
+
+
+
+// function randomCard(){
+// 	for(r = 0; r < deck.length; r++){
+// 		var newCard= [Math.floor(Math.random([r]))];
+// 	} return newCard;
+// } randomCard();
+// console.log(deck);
+
 // Need a function to deal a random card 
-for(var c = 0; c < deck.length;c++){
-	
 
-}
-
-// var randomCard= deck.pop(){
-// 	for (var x= 0; )
-// }
-// console.log(randomCard)
-
-
-// console.log(shuffle(deck))
 // Now I want to pop two randomCards from the shuffle(deck) for player2 when deal.onclick;
 // pop two randomCards from the deck for player1 when deal.onClick;
 // pop one card from deck for player2 when hit.onClick;
