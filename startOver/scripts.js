@@ -86,7 +86,35 @@ function shuffle(deck){
 } shuffle(deck);
 
 var tempCard = deck.pop();
-console.log(tempCard); 
+// console.log(tempCard); 
+// Set cards to pull, display tempCard on deal click: 
+var playCard1 = tempCard;
+var	playCard2 = tempCard;
+var	playCard3 = tempCard;
+var playCard4 = tempCard;	
+var dealButton = document.getElementById('deal');
+var restartButton = document.getElementById('restart');
+var p1Card1 = document.getElementById('p1Card1');
+var p1Card2 = document.getElementById('p1Card2');
+var p1Card3 = document.getElementById('p1Card3');
+var p1Card4 = document.getElementById('p1Card4');
+var p1Hit = document.getElementById('p1Hit');
+var p1Stand = document.getElementById('p1Stand');
+var p2card1 = document.getElementById('p2card1');
+var p2Card2 = document.getElementById('p2Card2');
+var p2Card3 = document.getElementById('p2Card3');
+var p2Card4 = document.getElementById('p2Card4'); 
+var p2Hit = document.getElementById('p2Hit');
+var p2Stand = document.getElementById('p2Stand')
+
+
+
+// console.log(playCard1)
+function deal(){
+
+}
+
+
 
 
 
