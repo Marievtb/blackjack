@@ -12,24 +12,39 @@
 	font-family:'Special Elite', cursive;
 	font color: black;
 	font-size: 20pt; 
+	text-align: center;
+}
+
+#player1h1{
+	font-family:'Special Elite', cursive;
+	font color: black;
+	font-size: 12pt; 
+	text-align: center;
+}
+
+#player2h1{
+	font-family:'Special Elite', cursive;
+	font color: black;
+	font-size: 12pt; 
+	text-align: center;
 }
 
 #tally{
 	font-family:'Special Elite', cursive;
 	font-size: 16pt;
-	display:inline-block;
+	display:inline;
 	position: relative;
 }
 
 .card-container{
 	display: inline-block;
-	height:300px;
-	width: 250px;
+	height:200px;
+	width: 125px;
 	border: dotted black;
-	position: static;
+	position: relative;
 
-/*}
-.p1card{
+}
+/*.p1card{
 	height: 25%;
 	width:25%;;
 	border: dotted black;
