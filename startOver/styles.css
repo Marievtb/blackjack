@@ -20,8 +20,18 @@
 	display:inline-block;
 	position: relative;
 }
-/*#scoreboard{
-	height:50px;
-	width:30px;
+
+.card-container{
+	display: inline-block;
+	height:300px;
+	width: 250px;
 	border: dotted black;
-}x*/
+	position: static;
+
+/*}
+.p1card{
+	height: 25%;
+	width:25%;;
+	border: dotted black;
+	position:absolute;
+}*/
