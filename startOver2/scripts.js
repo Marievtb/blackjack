@@ -1,4 +1,6 @@
 // console.log('Javascript');
+// (function (){
+// 	window.onload()= function(){
 
 // ===========================
 // --------THE DECK----------
@@ -8,7 +10,6 @@ this.suit = suit;
 this.value = value; 
 this.face = face;
 
-}
 
 var aceD = new card('Diamonds', 1, 'Ace');
 var aceH = new card('Hearts', 1, 'Ace');
@@ -76,4 +77,70 @@ var kingS = new card('Spades', 10, 'K');
 var kingC = new card('Clubs', 10, 'K');
 
 var deck = [aceD, aceH, aceS, aceC, twoD, twoH, twoS, twoC, threeD, threeH, threeS, threeC, fourD, fourH, fourS, fourC, fiveD, fiveH, fiveS, fiveC, sixD, sixH, sixS, sixC, sevenD, sevenH, sevenS, sevenC, eightD, eightH, eightS, eightC, nineD, nineH, nineS, nineC, tenD, tenH, tenS, tenC, jackD, jackH, jackS, jackC, queenD, queenH, queenS, queenC, kingD, kingH, kingS, kingC];
-console.log(sixC);
+// console.log(sixC);
+// =================================
+// -----other global variables------
+// =================================
+// GAME BUTTONS//
+var dealButton = document.getElementById('dealButton')
+var restartButton = document.getElementById('restart')
+// PLAYER 1 ELEMENTS//
+var p1Container = document.getElementById('player1-container');
+var player1Hand = document.getElementById('player1Hand');
+var p1HitCard = document.getElementById('p1HitCard');
+var p1HitCard2 = document.getElementById('p1Hitcard2');
+var p1HitCard3 = document.getElementById('p1HitCard3');
+// PLAYER 1 BUTTONS//
+var p1HitButton = document.getElementById('p1Hit');
+var p1StandButton = document.getElementById('p1Stand');
+// PlAYER 2 ELEMENTS//
+var p2Container = document.getElementById('player2-container');
+var player2Hand = document.getElementById('player2Hand');
+var p2HitCard = document.getElementById('p2HitCard');
+var p2HitCard2 = document.getElementById('p2HitCard2');
+var p2HitCard3 = document.getElementById('p2HitCard3');
+// PlAYER 2 BUTTONS//
+var p2HitButton = document.getElementById('p2Hit');
+var p2StandButton = document.getElementById('p2Stand');
+
+// =================================
+// ----------functions--------------
+// =================================
+
+// ---shuffle deck-----
+function shuffle(d){
+	for(var j, x, i = deck.length; i; j = Math.floor(Math.random() * i), x = d[--i], d[i] = d[j], d[j] = x);
+		 return d;
+} shuffle(deck);
+// console.log(deck);
+var players = [player1Hand, player2Hand]
+for(var i=0; i <players.length; i++){
+	players[i].push(deck.pop());
+	p1Container.appendChild('player1Hand');
+	p2Container.appendChild('player2Hand');
+}
+// deal each player 2 cards 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+// };// -window.onload
+// });
+
