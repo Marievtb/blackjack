@@ -7,11 +7,25 @@
 	background-size:cover;
 
 }*/
-
+body{
+	background-image: url(http://i.imgur.com/CrPppkb.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    margin-top:15%;
+}
 #header{
 	font-family:'Special Elite', cursive;
 	font color: black;
-	font-size: 20pt; 
+	font-size: 24pt; 
+	font-weight:bold;
+	text-align: center;
+}
+#directions{
+	font-family:'Special Elite', cursive;
+	font color: black;
+	font-size: 14pt; 
 	text-align: center;
 }
 
@@ -44,9 +58,12 @@
 	position: relative;
 
 }
-/*.p1card{
-	height: 25%;
-	width:25%;;
-	border: dotted black;
-	position:absolute;
-}*/
+
+#p2CardContainer{
+	display: float-right;
+}
+.card{
+	font-family:'Special Elite', cursive;
+	font-size:10pt;
+
+}

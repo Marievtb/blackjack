@@ -108,17 +108,24 @@ var p2StandButton = document.getElementById('p2Stand');
 // =================================
 
 // ---shuffle deck-----
+
 function shuffle(d){
 	for(var j, x, i = deck.length; i; j = Math.floor(Math.random() * i), x = d[--i], d[i] = d[j], d[j] = x);
 		 return d;
 } shuffle(deck);
-// console.log(deck);
-var players = [player1Hand, player2Hand]
-for(var i=0; i <players.length; i++){
-	players[i].push(deck.pop());
-	p1Container.appendChild('player1Hand');
-	p2Container.appendChild('player2Hand');
-}
+console.log(deck);
+
+// for each player...
+
+
+};
+
+// var players = [player1Hand, player2Hand]
+// for(var i=0; i <players.length; i++){
+// 	players[i].push(deck.pop());
+// 	p1Container.appendChild('player1Hand');
+// 	p2Container.appendChild('player2Hand');
+// }
 // deal each player 2 cards 
 
 
@@ -140,7 +147,7 @@ for(var i=0; i <players.length; i++){
 
 
 
-};
+// };
 // };// -window.onload
 // });
 

@@ -113,32 +113,16 @@ var gameContainer = document.getElementById('game-container');
 // FUNCTIONS
 // =========================================
 // shuffle the deck
+
 function shuffle(d){
 	for(var j, x, i = deck.length; i; j = Math.floor(Math.random() * i), x = d[--i], d[i] = d[j], d[j] = x);
 		 return d;
 } shuffle(deck);
 // console.log(deck)
 
-// For each player...
-
-// var players = [player1Hand, player2Hand]
-
-// // ...deal 2 cards: 
-// dealButton.onclick = function(event){
-// for(var p = 0; p<players.length; p++){
-// 	players[p].innerHTML=(deck.pop());
-// 	players[p].innerHTML=(deck.pop());
-// 	p1CardContainer.appendChild('player1Hand');
-// 	p2CardContainer.appendChild('player2Hand');
-
-// }
-// }
-
-
-
 dealButton.onclick = function(event) {
 var tempCard = deck.pop();
-var playCard1 = tempCard;
+var playCard1 = tempCard
 var	playCard2 = tempCard;
 var	playCard3 = tempCard;
 var playCard4 = tempCard;
@@ -205,6 +189,21 @@ var playCard4 = tempCard;
 // ===========================
 // Trial and Error//
 // ==========================
+// ---------------------------------------------
+// For each player..
+// var players = [player1Hand, player2Hand]
+
+// // ...deal 2 cards: 
+// dealButton.onclick = function(event){
+// for(var p = 0; p<players.length; p++){
+// 	players[p].innerHTML=(deck.pop());
+// 	players[p].innerHTML=(deck.pop());
+// 	p1CardContainer.appendChild('player1Hand');
+// 	p2CardContainer.appendChild('player2Hand');
+
+// }
+// }
+// ----------------------------------------
 
 // An array of cards
 // values
