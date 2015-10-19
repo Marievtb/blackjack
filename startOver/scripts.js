@@ -79,28 +79,19 @@ var kingC = new card('Clubs', 10, 'K');
 
 var deck = [aceD, aceH, aceS, aceC, twoD, twoH, twoS, twoC, threeD, threeH, threeS, threeC, fourD, fourH, fourS, fourC, fiveD, fiveH, fiveS, fiveC, sixD, sixH, sixS, sixC, sevenD, sevenH, sevenS, sevenC, eightD, eightH, eightS, eightC, nineD, nineH, nineS, nineC, tenD, tenH, tenS, tenC, jackD, jackH, jackS, jackC, queenD, queenH, queenS, queenC, kingD, kingH, kingS, kingC];
 // console.log(sixC);
-// ============================================================
-// shuffle the deck
 
-function shuffle(deck){
-	for(var j, x, i = deck.length; i; j = Math.floor(Math.random() * i), x = deck[--i], deck[i] = deck[j], deck[j] = x);
-		 return deck;
-} shuffle(deck);
-
-var tempCard = deck.pop();
-// console.log(tempCard); 
-// Set cards to pull, display tempCard on deal click: 
-// Outputs
-var playCard1 = tempCard;
-var	playCard2 = tempCard;
-var	playCard3 = tempCard;
-var playCard4 = tempCard;	
-// buttons
+// ==============================================
+// OTHER GLOBAL VARIABLES
+// ==============================================
+// players
+var player1;
+var player2;
+var players=[player1,player2];
 var dealButton = document.getElementById('deal');
 var restartButton = document.getElementById('restart');
 // player 1 elements
 var p1Container = document.getElementById('p1CardContainer');
-var p1Card1 = document.getElementById('p1Card1');
+var player1Hand = document.getElementById('player1Hand');
 var p1Card2 = document.getElementById('p1Card2');
 var p1Card3 = document.getElementById('p1Card3');
 var p1Card4 = document.getElementById('p1Card4');
@@ -109,25 +100,57 @@ var p1Hit = document.getElementById('p1Hit');
 var p1Stand = document.getElementById('p1Stand');
 // player 2 elements
 var p2Container = document.getElementById('p2CardContainer');
-var p2card1 = document.getElementById('p2card1');
+var player2Hand= document.getElementById('player2Hand')
 var p2Card2 = document.getElementById('p2Card2');
 var p2Card3 = document.getElementById('p2Card3');
 var p2Card4 = document.getElementById('p2Card4');
 // player 2 buttons 
 var p2Hit = document.getElementById('p2Hit');
 var p2Stand = document.getElementById('p2Stand')
+var gameContainer = document.getElementById('game-container');
+
+// =========================================
+// FUNCTIONS
+// =========================================
+// shuffle the deck
+function shuffle(d){
+	for(var j, x, i = deck.length; i; j = Math.floor(Math.random() * i), x = d[--i], d[i] = d[j], d[j] = x);
+		 return d;
+} shuffle(deck);
+// console.log(deck)
+
+// For each player...
+
+// var players = [player1Hand, player2Hand]
+
+// // ...deal 2 cards: 
+// dealButton.onclick = function(event){
+// for(var p = 0; p<players.length; p++){
+// 	players[p].innerHTML=(deck.pop());
+// 	players[p].innerHTML=(deck.pop());
+// 	p1CardContainer.appendChild('player1Hand');
+// 	p2CardContainer.appendChild('player2Hand');
+
+// }
+// }
 
 
-
-// console.log(playCard1)
 
 dealButton.onclick = function(event) {
+var tempCard = deck.pop();
+var playCard1 = tempCard;
+var	playCard2 = tempCard;
+var	playCard3 = tempCard;
+var playCard4 = tempCard;
   p1Card1.innerHTML = playCard1.face + ' of ' + playCard1.suit;
   p1Card2.innerHTML = playCard2.face + ' of ' + playCard2.suit;
   p2Card1.innerHTML = playCard3.face + ' of ' + playCard3.suit;
   p2Card2.innerHTML = playCard4.face + ' of ' + playCard4.suit;
-  // p1Container.appendChild('p1Card1','p1Card2');
-  // p2Container.appendChild('p2Card1', 'p2Card2');
+  p1Container.appendChild('p1Card1','p1Card2');
+  gameContainer.appendChild('p1Container');
+  p2Container.appendChild('p2Card1', 'p2Card2');
+  gameContainer.appendChild('p2Container');
+
 }
 
 

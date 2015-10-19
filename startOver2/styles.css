@@ -1,0 +1,25 @@
+/*body{
+	background-color: green;
+}*/
+
+#header{
+	font-family:'Special Elite', cursive;
+	font color: black;
+	font-size: 20pt; 
+	text-align: center;
+}
+
+.button{
+	font-family:'Special Elite', cursive;
+	font color: black;
+	font-size: 10pt; 
+}
+
+#directions{
+	font-family:'Special Elite', cursive;
+	font color: black;
+	font-size: 12pt; 
+	text-align: center;
+
+
+}
